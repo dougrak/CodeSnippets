@@ -1,0 +1,9 @@
+n = int(input().strip())
+eng_sub = set(map(int, input().split()))
+
+b = int(input().strip())
+fr_sub = set(map(int, input().split()))
+
+both = eng_sub.union(fr_sub)
+
+print(len(both))
