@@ -1,0 +1,15 @@
+len_A = int(input().strip())
+A = set(map(int, input().split()))
+
+N = int(input().strip())
+for i in range(0, N):
+    oper_len = list(input().split())
+    operation = oper_len[0]
+    len_B = oper_len[1]
+    B = set(map(int, input().split()))
+    
+    getattr(A, operation)(B)
+
+sum_A = sum(A)
+
+print(sum_A)
